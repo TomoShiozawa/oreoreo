@@ -4,7 +4,7 @@
       v-for="(item, index) in oreoStack"
       :key="index"
       class="p-text-center"
-      :class="{ o: item == 'オ', re: item == 'レ' }"
+      :class="{ o: item === 'オ', re: item === 'レ' }"
       :style="style(index)"
     />
   </div>
