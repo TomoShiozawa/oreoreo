@@ -3,6 +3,9 @@
   <div class="p-grid nested-grid">
     <div class="p-col-12 p-md-6">
       <div class="p-col-12">
+        <OreoCounter :oreo-stack="oreoStack" />
+      </div>
+      <div class="p-col-12">
         <TextArea v-model="inputText" :auto-resize="true" style="width: 100%" />
       </div>
       <div class="p-col-8 p-offset-2">
@@ -17,11 +20,13 @@
 
 <script>
 import OreoStack from './OreoStack';
+import OreoCounter from './OreoCounter';
 
 export default {
   name: 'Main',
   components: {
     OreoStack,
+    OreoCounter,
   },
   data() {
     return {
